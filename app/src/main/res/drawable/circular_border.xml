@@ -1,0 +1,5 @@
+<!-- res/drawable/circular_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <stroke android:width="10dp" android:color="@android:color/white" />
+    <solid android:color="@android:color/transparent" />
+</shape>

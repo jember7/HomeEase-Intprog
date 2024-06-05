@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".ProfilePageActivity">
+
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_35"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true" />
+
+
+    <TextView
+        android:id="@+id/maayongAdlawText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maayong Adlaw"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/profilePicture"
+        android:layout_alignTop="@id/profilePicture" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/profilePicture"
+        android:layout_below="@id/maayongAdlawText"
+        android:layout_marginTop="8dp" />
+
+    <!-- Number -->
+    <TextView
+        android:id="@+id/numberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Number API to be implemented"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/profilePicture"
+        android:layout_below="@id/usernameText"
+        android:layout_marginTop="8dp" />
+
+    <!-- Service Texts -->
+    <TextView
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Edit Profile"
+        android:textColor="@color/purple_700"
+        android:textSize="22sp"
+        android:layout_below="@id/numberText"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:id="@+id/manageLinkedBankText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Linked Bank Accounts"
+        android:textColor="@color/purple_700"
+        android:textSize="22sp"
+        android:layout_below="@id/editProfile"
+        android:layout_marginTop="10dp" />
+
+
+
+    <TextView
+        android:id="@+id/changePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textColor="@color/purple_700"
+        android:textSize="22sp"
+        android:layout_below="@id/manageLinkedBankText"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/bookingHistoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking History"
+        android:textColor="@color/purple_700"
+        android:textSize="22sp"
+        android:layout_below="@id/changePassword"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/deleteAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:textColor="@color/purple_700"
+        android:textSize="22sp"
+        android:layout_below="@id/bookingHistoryText"
+        android:layout_marginTop="10dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/logoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:clickable="true"
+        android:textColor="@color/purple_700"
+        android:textSize="22sp"
+        android:layout_below="@id/deleteAccountText"
+        android:layout_marginTop="10dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/activity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/payment"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_4"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/textHome"
+            android:layout_width="69dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/img_10" />
+
+        <ImageView
+            android:id="@+id/messages"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_6"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_7"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

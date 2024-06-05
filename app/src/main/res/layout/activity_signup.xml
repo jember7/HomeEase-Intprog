@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B1D4EF"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:textColor="#032B76"
+        android:textStyle="bold"
+        android:text="My Profile"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#032B76"
+        android:textStyle="bold"
+        android:text="Full Name"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints="Name"
+        android:inputType="text"
+        android:background="@drawable/my_border"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#032B76"
+        android:textStyle="bold"
+        android:text="Mobile Number"/>
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints="number"
+        android:background="@drawable/my_border" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#032B76"
+        android:textStyle="bold"
+        android:text="Password"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:background="@drawable/my_border" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Save"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <View
+            android:layout_width="145dp"
+            android:layout_height="2dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="or sign in with"/>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#00A9FF"
+        android:fontFamily="sans-serif"
+        android:drawableLeft="@drawable/google_size"
+        android:text="Sign up with Google"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:drawableLeft="@drawable/logo_size"
+        android:text="Sign up with Facebook"/>
+
+</LinearLayout>

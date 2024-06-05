@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0067A5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_gravity="left"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/my_border"
+                android:textColor="@color/white"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Password"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/my_border"
+                android:hint="Enter your password"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/forgotPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Forgot password"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:clickable="true" />
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Log In"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#003B5F"
+                android:layout_marginTop="26dp"
+                android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/signUpText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginTop="10dp"
+                    android:text="Not registered yet? Sign up with us today!"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:clickable="true" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="309dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

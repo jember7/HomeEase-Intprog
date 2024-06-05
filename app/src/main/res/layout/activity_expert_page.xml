@@ -1,0 +1,83 @@
+<!-- res/layout/activity_bookings.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ongoingRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/activity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/payment"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_4"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/textHome"
+            android:layout_width="69dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/img_10" />
+
+        <ImageView
+            android:id="@+id/messages"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_6"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_7"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

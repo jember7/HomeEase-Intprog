@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0067A5"
+    tools:context=".EditExpertProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/fullNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Full Name"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/fullNameEditText"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullNameTextView"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/my_border"
+                android:hint="Enter your full name"/>
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Email"
+                android:textSize="18sp"
+                android:layout_below="@id/fullNameEditText"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/emailTextView"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/my_border"
+                android:hint="Enter your email"/>
+
+
+
+            <TextView
+                android:id="@+id/dateOfBirthTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth (mm/dd/yyyy)"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_below="@id/emailEditText"
+                android:layout_marginTop="16dp"/>
+
+
+            <EditText
+                android:id="@+id/dateOfBirthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/dateOfBirthTextView"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/my_border"
+                android:hint="Select your date of birth"
+                android:focusable="false"
+                android:onClick="showDatePickerDialog"/>
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Address"
+                android:textSize="18sp"
+                android:layout_below="@id/dateOfBirthEditText"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/addressTextView"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Enter your Address"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:background="@drawable/my_border"/>
+            <TextView
+                android:id="@+id/numberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Mobile Number"
+                android:textSize="18sp"
+                android:layout_below="@id/addressEditText"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/numberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/numberTextView"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Enter your Mobile Number"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:background="@drawable/my_border"/>
+
+            <TextView
+                android:id="@+id/professionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profession"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@id/numberEditText"
+                android:layout_marginTop="16dp"/>
+
+            <Spinner
+                android:id="@+id/professionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/professionTextView"
+                android:layout_marginTop="8dp"/>
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/professionSpinner"
+                android:contentDescription="Profile Image"
+                android:src="@drawable/img_36" />
+
+            <Button
+                android:id="@+id/uploadImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/professionSpinner"
+                android:text="Upload Image" />
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="18sp"
+                android:layout_below="@id/uploadImageButton"
+                android:layout_marginTop="50dp"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"/>
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/saveButton"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/img"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
